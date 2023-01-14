@@ -1,0 +1,14 @@
+.div{
+    height: 100%;
+    width: 100%;
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 20px;
+}
+p{
+    font-weight: bold;
+}
+.code{
+    color: brown;
+    size: 30px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div"><p>1. Create a button , on click of which new Heading tag h1 should be added with text as "MERN stack" on 
+        the screen above button.</p> 
+ <button onclick="openh1()">click me</button>
+    <div id="Heading"></div>
+    <pre class="code">
+    function openh1(){
+        document.getElementById("Heading").innerHTML= '<h2>Mern stack</h2>'
+</pre>
+</div>
+   
+  <div class="div"> <p> 2. Write code to get 1st H1 element from a webpage using DOM</p>
+   <h1>this is first h1</h1>
+        <h1>this is second h1</h1>
+        <h1>this is third h1</h1>
+        <h1>this is fourth h1</h1>
+        <pre class="code"> 
+        document.getElementsByTagName("h1")[0].innerHTML = "hello!";
+    </pre>
+</div>
+
+  <div class="div"> <p> 3. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep 
+    updating every second</p>
+   <div>
+    <span id="hrs"></span>
+    <span>:</span>
+    <span id="mins"></span>
+    <span>:</span>
+    <span id="secs"></span>
+    <span id="ampm"></span>
+</div>
+<pre class="code"> 
+<!-- function checktime(){
+    const today =new Date()
+    let h =today.getHours();
+    let m =today.getMinutes();
+    let s =today.getSeconds();
+    let a=document.getElementById('ampm').innerText;
+    console.log(a);
+    if(h>12){
+        h=h-12;
+        document.getElementById('ampm').innerHTML='pm'
+    }
+    else{
+        document.getElementById('ampm').innerHTML='am'
+    }
+    if(h<10){
+        h= '0'+ h;
+    }
+    if(m <10){
+        m= '0'+ m;
+    }
+    if(s<10){
+        s= '0'+ s;
+    }
+   
+    document.getElementById('hrs').innerHTML=h
+    document.getElementById('mins').innerHTML=m;
+    document.getElementById('secs').innerHTML=s;
+}
+setInterval(checktime,1000) -->
+</pre>
+</div>
+
+ <div class="div">  <p> 4. Create an HTML page having content as Hello world and a button named Replace Text. When user will 
+    click on this button page content should be changed to "Welcome to Elevation academy" </p>
+   
+   <div id="world">hello world</div><br>
+    <button id="btn" onclick="changingtext()">Replace text</button><br>
+    <pre class="code">
+    function changingtext() {
+        document.getElementById('world').innerText = 'Welcome to Elevation Academy'
+       }
+</pre>
+</div>
+
+
+  <div class="div"> <p> 5. Create an HTML page having content as Hello world and a button named "Hide Text." When user will 
+    click on this button hide the "Hello World" text</p>
+   <h3 id="remove">hello world</h3>
+        <button onclick="hide()">hide text</button>
+
+        <pre class="code">
+    function hide(){
+        document.getElementById("remove").innerHTML=""</pre>
+    </div>
+
+<script src="./index.js"></script>
+</body>
+</html>
